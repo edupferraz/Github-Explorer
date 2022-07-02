@@ -4,6 +4,11 @@ import { RepositoryItem } from "./RepositoryItem";
 import '../styles/repositories.scss';
 
 interface Repository {
+        owner: {
+            login: string,
+            avatar_url: string,
+            html_url: string,
+        }
     name: string;
     description: string;
     html_url: string;

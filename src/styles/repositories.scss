@@ -1,31 +1,102 @@
 section.repository-list {
 
-    margin: 40px;
+    margin: 40px auto;
 
+    width: 60%;
+    
     h1 {
-        margin-bottom: 16px;
+        font-size: 32px;
+        margin-bottom: 32px;
+        color: var(--white);
     }
 
     ul {
         list-style: none;
 
         li {
-            & + li {
-                margin-top: 20px;
+            display: flex;
+            padding: 20px 0 20px 80px;
+            margin-top: 30px;
+     
+            background: rgba( 255, 255, 255, 0.05 );
+            box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.205);
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+            a {
+
+                margin: auto;
+
+                img {
+                    width: 150px;
+                    border-radius: 50%;
+                }
             }
+
+            div {   
+                flex: 1;
+                margin: auto 0 auto 40px;
+                
+                strong {
+                    display: block;
+                    font-size: 24px;
+                    color: var(--white);
+                }
+
+                strong + strong {
+                    color: var(--black);
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+
+
         }
 
         p {
             font-size: 14px;
-            color: #444;
+            color: var(--black);
             margin-top: 8px;
         }
 
-        a {
-            display: inline-block;
-            margin-top: 16px;
-            text-decoration: none;
-            color: #8257e6;
+        .group-link {
+
+            margin: auto;
+
+            a {
+                display: inline-block;
+                margin: 16px;
+                padding: 16px 32px;
+                text-decoration: none;                
+                transition: all 0.2s;
+                border-radius: 8px;
+
+                color: var(--white);
+                background-color: transparent;
+                border: 1px solid var(--white);
+
+                &:hover {
+                    color: var(--g);
+                    background-color: var(--white);
+                    border: 1px solid transparent;
+                }
+
+            }
+
+            a + a {
+                color: var(--white);
+                background-color: var(--black);
+                border: none;
+                
+                &:hover {
+                    color: var(--black);
+                    background-color: var(--white);
+                    border: none;
+                }
+            }
         }
+        
     }
 }

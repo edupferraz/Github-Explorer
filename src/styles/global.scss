@@ -1,3 +1,9 @@
+:root{
+    --green: #5F939A;
+    --white: #EAC8AF;
+    --black: #1B2021;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,4 +13,5 @@
 body{
     font: 16px "Helvetica Neue", Arial, sans-serif;
     color: #121214;
+    background-color: var(--green);
 }
